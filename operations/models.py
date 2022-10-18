@@ -2,6 +2,17 @@ import uuid
 from django.core.validators import MaxLengthValidator
 from django.db import models
 
+class Types(models.IntegerChoices):
+    DEBITO = 1
+    BOLETO = 2
+    FINANCIAMENTO = 3
+    CREDITO = 4
+    EMPRESTIMO = 5
+    VENDAS = 6
+    TED = 7
+    DOC = 8
+    ALUGUEL = 9
+
 class Operations(models.Model): 
     id = models.UUIDField(default=uuid.uuid5, primary_key=True)
     type = models.IntegerField(choices=Types.choices)

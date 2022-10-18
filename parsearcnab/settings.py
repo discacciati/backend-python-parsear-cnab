@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -46,7 +46,6 @@ MY_APPS= [
 THIRD_PARTY_APPS =[
     "rest_framework",
     "rest_framework.authtoken",
-    "drf_spectacular",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + MY_APPS + THIRD_PARTY_APPS
@@ -55,7 +54,6 @@ REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }
 
-AUTH_USER_MODEL = "accounts.Account"
 
 SPECTACULAR_SETTINGS = {
     "TITLE": "Parsear CNAB Project",
