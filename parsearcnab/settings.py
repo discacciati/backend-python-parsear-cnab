@@ -41,7 +41,6 @@ DJANGO_APPS = [
 
 MY_APPS= [
     "operations",
-    "read_cnab",
 ]
 
 THIRD_PARTY_APPS =[
