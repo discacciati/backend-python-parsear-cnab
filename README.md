@@ -4,7 +4,6 @@ Projeto de backend desenvolvido em Python, responsável por receber e parsear ar
 
 ## Tecnologias
 . Linguagem Python 3.0 </br>
-. Docker</br>
 
 ## Inicialização do Projeto
 
